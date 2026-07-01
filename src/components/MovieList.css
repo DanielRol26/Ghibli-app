@@ -1,0 +1,7 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #eef7f0;
+}

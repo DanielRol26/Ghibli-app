@@ -1,0 +1,45 @@
+/* components/MovieCard.css */
+.movie-card {
+  background: #fdf6e3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 260px;
+  margin: 15px;
+  border: 2px solid #a8d5ba;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.movie-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-title {
+  font-family: 'Georgia', serif;
+  color: #2f4f3f;
+  margin: 0 0 8px 0;
+}
+
+.movie-director, .movie-year {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin: 4px 0;
+}
+
+.movie-description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
+}

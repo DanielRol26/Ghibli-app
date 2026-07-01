@@ -1,0 +1,9 @@
+/* components/Footer.css */
+.footer {
+  background: linear-gradient(135deg, #7fb3d5, #a8d5ba);
+  text-align: center;
+  padding: 20px;
+  color: #2f4f3f;
+  font-family: 'Georgia', serif;
+  border-top: 4px solid #5a8f7b;
+}
