@@ -1,19 +1,37 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+:root {
+  /* Brand color tokens from palette */
+  --color-ink: #15201B;
+  --color-pine: #1F5E4A;
+  --color-moss: #3E9C7A;
+  --color-marigold: #F2A03D;
+  --color-clay: #E8643C;
+  --color-paper: #F6F2E9;
+  --color-paper-2: #EFE9DC;
+  --color-line: #DED6C5;
+
+  /* Typography family tokens */
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Semantics mapped to existing structure */
+  --text: var(--color-ink);
+  --text-h: var(--color-pine);
+  --bg: var(--color-paper);
+  --border: var(--color-line);
+  --code-bg: var(--color-paper-2);
+  --accent: var(--color-moss);
+  --accent-bg: rgba(62, 156, 122, 0.1);
+  --accent-border: rgba(62, 156, 122, 0.5);
+  --social-bg: rgba(239, 233, 220, 0.5);
+  --shadow:
+    rgba(21, 32, 27, 0.08) 0 10px 15px -3px, rgba(21, 32, 27, 0.04) 0 4px 6px -2px;
+
+  --sans: var(--font-body);
+  --heading: var(--font-display);
+  --mono: var(--font-mono);
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -32,17 +50,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: var(--color-paper);
+    --text-h: var(--color-marigold);
+    --bg: var(--color-ink);
+    --border: var(--color-pine);
+    --code-bg: rgba(239, 233, 220, 0.15);
+    --accent: var(--color-moss);
+    --accent-bg: rgba(62, 156, 122, 0.15);
+    --accent-border: rgba(62, 156, 122, 0.5);
+    --social-bg: rgba(31, 94, 74, 0.25);
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(0, 0, 0, 0.5) 0 10px 15px -3px, rgba(0, 0, 0, 0.35) 0 4px 6px -2px;
   }
 
   #social .button-icon {

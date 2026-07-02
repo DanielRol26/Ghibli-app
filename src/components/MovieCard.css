@@ -1,18 +1,18 @@
-/* components/MovieCard.css */
 .movie-card {
-  background: #fdf6e3;
+  background: var(--color-paper);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(21, 32, 27, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   width: 260px;
   margin: 15px;
-  border: 2px solid #a8d5ba;
+  border: 2px solid var(--color-line);
 }
 
 .movie-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(21, 32, 27, 0.15);
+  border-color: var(--color-moss);
 }
 
 .movie-image {
@@ -26,20 +26,36 @@
 }
 
 .movie-title {
-  font-family: 'Georgia', serif;
-  color: #2f4f3f;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--color-pine);
   margin: 0 0 8px 0;
 }
 
-.movie-director, .movie-year {
+.movie-director {
+  font-family: var(--font-body);
   font-size: 0.9rem;
-  color: #4a4a4a;
+  color: var(--color-ink);
+  margin: 4px 0;
+}
+
+.movie-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-marigold);
+  background-color: rgba(242, 160, 61, 0.12);
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
   margin: 4px 0;
 }
 
 .movie-description {
+  font-family: var(--font-body);
   font-size: 0.85rem;
-  color: #666;
+  color: var(--color-ink);
+  opacity: 0.9;
   margin-top: 10px;
-  line-height: 1.4;
+  line-height: 1.45;
 }
